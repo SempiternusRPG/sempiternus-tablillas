@@ -26,7 +26,7 @@
   padding: 10px;
   border-radius: var(--brd-r-2);
   border: var(--brd);
-  box-shadow: 0px 5px hsl( from var(--accent) h s l / .6);
+  box-shadow: 0px 5px hsl(from var(--accent) h s l / .6);
 }
 .sempt-01tx {
   background: var(--bckg-2);
@@ -116,7 +116,6 @@
   overflow: hidden;
 }
 .sempt-01-reg-t.icon-grupo >i {
-  font: ;
   font-size: 1.8rem;
   color: var(--cicon);
 }
@@ -162,11 +161,7 @@
   line-height: 100%;
   height: fit-content;
 }
-.sempt-firma > duv > div>b {
-  font-family: var(--fnt-title);
-  font-weight: 200;
-  font-size: 1.2rem;
-}
+
 .sempt-firma > div > div > b {
   font-family: var(--fnt-title);
   font-weight: 400;
@@ -223,7 +218,7 @@
   opacity: .1;
   overflow: hidden;
   background-attachment: fixed;
-  filter: blur( );
+  filter: blur(1px);
 }
 .sempt-instagram.sinbr > div {
   border: var(--brd);
@@ -263,7 +258,7 @@
   border: var(--brd);
 }
 .sempt-insp-username {
-  font-family: poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-style: italic;
   color: var(--accent);
@@ -300,7 +295,7 @@
   justify-content: center;
 }
 .sempt-insp-info > div > b {
-  font-family: gabriel;
+  font-family: 'Gabriel';
   font-size: 0.8rem;
   text-shadow: var(--txsh);
 }
@@ -348,7 +343,7 @@
   border: var(--brd);
   border-radius: var(--brd-r-2);
   display: flex;
-  align-content: c;
+  align-content: center;
   align-items: center;
   justify-content: center;
 }
@@ -391,7 +386,6 @@
 }
 .sempt-insta-minip {
   display: flex;
-  padding: ga;
   padding: 10px;
   gap: 5px;
   text-shadow: var(--txsh);
@@ -423,10 +417,9 @@
   display: flex;
   gap: 10px;
 }
-div {
-}
+
 .sempt-insta-statics > div b {
-  font-family: gabriel;
+  font-family: 'Gabriel';
   text-shadow: var(--txsh);
   font-size: .8rem;
 }
@@ -439,21 +432,7 @@ div {
   text-shadow: var(--txsh);
 }
 
-.sempt-insta-posteo.sinbr {
-  display: grid;
-  gap: 5px;
-}
-.sempt-insta-post {
-  width: 380px;
-  height: 380px;
-  background: var(--grd) !important;
-  border: var(--brd);
-  border-radius: var(--brd-r-2);
-  display: flex;
-  align-content: c;
-  align-items: center;
-  justify-content: center;
-}
+
 .sempt-insta-posteo.sinbr {
   width: 384px;
   margin: 10px auto;
@@ -464,14 +443,7 @@ div {
   padding: 10px;
   box-shadow: 1px 1px 8px #0003;
 }
-.sempt-insta-posteo.sinbr > div:not(.sempt-insta-statics) {
-  border: var(--brd);
-  border-radius: var(--brd-r-2);
-  background: var(--bckg-1);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
+
 .sempt-insta-post>div {
   border: var(--brd);
   width: 310px;
@@ -492,55 +464,7 @@ div {
   z-index: -1;
   filter: blur(2px);
 }
-.sempt-insta-minip {
-  display: flex;
-  padding: ga;
-  padding: 10px;
-  gap: 5px;
-  text-shadow: var(--txsh);
-}
-.sempt-insta-statics > div>i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: var(--brd);
-  background: var(--bckg-3);
-  width: 40px;
-  height: 30px;
-  color: var(--accent);
-  text-shadow: var(--txsh);
-  font-size: .8rem;
-}
-.sempt-insta-statics>div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: var(--brd);
-  gap: 20px;
-  flex-grow: 1;
-  border-radius: var(--brd-r-2);
-  background: var(--bckg-1);
-  overflow: hidden;
-}
-.sempt-insta-statics {
-  display: flex;
-  gap: 10px;
-}
-div {
-}
-.sempt-insta-statics > div b {
-  font-family: gabriel;
-  text-shadow: var(--txsh);
-  font-size: .8rem;
-}
-.sempt-insta-inf {
-  width: fit-content;
-  padding: 5px 10px;
-  text-transform: uppercase;
-  font-size: .65rem;
-  font-weight: 800 !important;
-  text-shadow: var(--txsh);
-}
+
 .sempt-insta-comentario.sinbr {
   margin: 10px auto;
   width: 400px;
@@ -589,7 +513,7 @@ div {
   text-shadow: var(--txsh);
 }
 .sempt-icom-p > b {
-  font-family: poppins;
+  font-family: 'Poppins';
   text-transform: lowercase;
   font-weight: 600;
   font-style: italic;
@@ -661,7 +585,7 @@ div {
   min-height:27px;
 }
 .sempt-baul-temas.sinbr > div >a {
-  font-family: poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-style: italic;
   text-transform: lowercase;
@@ -689,8 +613,7 @@ div {
   border: var(--brd);
   border-radius: var(--brd-r-2);
 }
-.sempt-baul-c {
-}
+
 .sempt-baulc-contacto {
   display: flex;
   align-items: center;
@@ -835,7 +758,7 @@ div {
   transition-delay: .5s;
 }
 .sempt-br-pj > div> a {
-  font-family: poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-style: italic;
   color: #fafafa;
@@ -903,7 +826,7 @@ div {
   flex-direction: row-reverse;
 }
 .sempt-mdbs-nm {
-  font-family: poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: .85rem;
   color: var(--accent);
@@ -960,7 +883,7 @@ div {
 }
 .sempt-trama > b {
   display: block;
-  font-family: poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-style: italic;
   font-size: .9rem;
@@ -1019,8 +942,7 @@ div {
   line-height: 100%;
   text-shadow: var(--txsh);
 }
-.sempt-tbrol-t > i {
-}
+
 .sempt-tbrol-t > i {
   display: flex;
   align-items: center;
@@ -1037,7 +959,7 @@ div {
   color: var(--accent);
 }
 .sempt-tbrol-t > b {
-  font-family: poppins;
+  font-family: 'Poppins';
   line-height: 100%;
   font-weight: 600;
   font-style: italic;
@@ -1106,8 +1028,6 @@ div {
   position: relative;
   z-index: 1;
 }
-.sempt-txadm-tx > strong {
-}
 .sempt-txadm-tx > i {
   position: absolute;
   bottom: 0;
@@ -1118,7 +1038,7 @@ div {
   z-index: -1;
 }
 .sempt-txadm-tx > div {
-  font-family: poppins;
+  font-family: 'Poppins';
   font-size: 1rem;
   text-shadow: var(--txsh);
   padding-bottom: 10px;
@@ -1433,8 +1353,7 @@ div {
   flex-wrap: wrap;
   gap: 5px;
 }
-.sempt-medalla-modulo {
-}
+
 .sempt-medalla-modulo .smp-medallas.sinbr .sempt-md-sd {
   width: calc(calc(100% - 20px) / 5);
   box-sizing: border-box;
