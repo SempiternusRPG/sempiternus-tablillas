@@ -26,7 +26,7 @@
   padding: 10px;
   border-radius: var(--brd-r-2);
   border: var(--brd);
-  box-shadow: 0px 5px hsl(from var(--accent) h s l / .6);
+  box-shadow: 0px 5px hsl( from var(--accent) h s l / .6);
 }
 .sempt-01tx {
   background: var(--bckg-2);
@@ -72,6 +72,43 @@
   overflow: auto;
   height: 300px;
 }
+@media (max-width: 620px) {
+  .sempt-01t,
+  .sempt-01t.sempt-01treg {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .sempt-01-tt {
+    height: 55px;
+  }
+  .sempt-01-tt > i {
+    width: 60px;
+    font-size: 1.3rem;
+  }
+  .sempt-01-tt > b {
+    font-size: 1.1rem;
+  }
+  .sempt-01tx {
+    padding: 15px;
+    font-size: .9rem;
+  }
+  .sempt-registros {
+    flex-direction: column;
+  }
+  .sempt-01-reg-col {
+    width: 100%;
+    height: auto;
+  }
+  .sempt-01-reg-pjs {
+    padding: 15px;
+  }
+  .sempt-01-reg-pjs.sinbr {
+    max-height: 220px;
+  }
+}
+/* ===== FIN RESPONSIVE ===== */
+
 .sinbr > br {
   display: none;
 }
@@ -116,7 +153,7 @@
   overflow: hidden;
 }
 .sempt-01-reg-t.icon-grupo >i {
-  font-size: 1.8rem;
+   font-size: 1.8rem;
   color: var(--cicon);
 }
 .sempt-firma {
@@ -161,7 +198,11 @@
   line-height: 100%;
   height: fit-content;
 }
-
+.sempt-firma > div > div>b {
+  font-family: var(--fnt-title);
+  font-weight: 200;
+  font-size: 1.2rem;
+}
 .sempt-firma > div > div > b {
   font-family: var(--fnt-title);
   font-weight: 400;
@@ -218,7 +259,7 @@
   opacity: .1;
   overflow: hidden;
   background-attachment: fixed;
-  filter: blur(1px);
+  filter: blur( );
 }
 .sempt-instagram.sinbr > div {
   border: var(--brd);
@@ -258,7 +299,7 @@
   border: var(--brd);
 }
 .sempt-insp-username {
-  font-family: 'Poppins';
+  font-family: poppins;
   font-weight: 600;
   font-style: italic;
   color: var(--accent);
@@ -295,7 +336,7 @@
   justify-content: center;
 }
 .sempt-insp-info > div > b {
-  font-family: 'Gabriel';
+  font-family: gabriel;
   font-size: 0.8rem;
   text-shadow: var(--txsh);
 }
@@ -343,7 +384,7 @@
   border: var(--brd);
   border-radius: var(--brd-r-2);
   display: flex;
-  align-content: center;
+  align-content: c;
   align-items: center;
   justify-content: center;
 }
@@ -386,6 +427,7 @@
 }
 .sempt-insta-minip {
   display: flex;
+  padding: ga;
   padding: 10px;
   gap: 5px;
   text-shadow: var(--txsh);
@@ -417,9 +459,10 @@
   display: flex;
   gap: 10px;
 }
-
+div {
+}
 .sempt-insta-statics > div b {
-  font-family: 'Gabriel';
+  font-family: gabriel;
   text-shadow: var(--txsh);
   font-size: .8rem;
 }
@@ -432,7 +475,21 @@
   text-shadow: var(--txsh);
 }
 
-
+.sempt-insta-posteo.sinbr {
+  display: grid;
+  gap: 5px;
+}
+.sempt-insta-post {
+  width: 380px;
+  height: 380px;
+  background: var(--grd) !important;
+  border: var(--brd);
+  border-radius: var(--brd-r-2);
+  display: flex;
+  align-content: c;
+  align-items: center;
+  justify-content: center;
+}
 .sempt-insta-posteo.sinbr {
   width: 384px;
   margin: 10px auto;
@@ -443,7 +500,14 @@
   padding: 10px;
   box-shadow: 1px 1px 8px #0003;
 }
-
+.sempt-insta-posteo.sinbr > div:not(.sempt-insta-statics) {
+  border: var(--brd);
+  border-radius: var(--brd-r-2);
+  background: var(--bckg-1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
 .sempt-insta-post>div {
   border: var(--brd);
   width: 310px;
@@ -464,7 +528,55 @@
   z-index: -1;
   filter: blur(2px);
 }
-
+.sempt-insta-minip {
+  display: flex;
+  padding: ga;
+  padding: 10px;
+  gap: 5px;
+  text-shadow: var(--txsh);
+}
+.sempt-insta-statics > div>i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: var(--brd);
+  background: var(--bckg-3);
+  width: 40px;
+  height: 30px;
+  color: var(--accent);
+  text-shadow: var(--txsh);
+  font-size: .8rem;
+}
+.sempt-insta-statics>div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: var(--brd);
+  gap: 20px;
+  flex-grow: 1;
+  border-radius: var(--brd-r-2);
+  background: var(--bckg-1);
+  overflow: hidden;
+}
+.sempt-insta-statics {
+  display: flex;
+  gap: 10px;
+}
+div {
+}
+.sempt-insta-statics > div b {
+  font-family: gabriel;
+  text-shadow: var(--txsh);
+  font-size: .8rem;
+}
+.sempt-insta-inf {
+  width: fit-content;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: 800 !important;
+  text-shadow: var(--txsh);
+}
 .sempt-insta-comentario.sinbr {
   margin: 10px auto;
   width: 400px;
@@ -513,7 +625,7 @@
   text-shadow: var(--txsh);
 }
 .sempt-icom-p > b {
-  font-family: 'Poppins';
+  font-family: poppins;
   text-transform: lowercase;
   font-weight: 600;
   font-style: italic;
@@ -585,7 +697,7 @@
   min-height:27px;
 }
 .sempt-baul-temas.sinbr > div >a {
-  font-family: 'Poppins';
+  font-family: poppins;
   font-weight: 600;
   font-style: italic;
   text-transform: lowercase;
@@ -613,7 +725,8 @@
   border: var(--brd);
   border-radius: var(--brd-r-2);
 }
-
+.sempt-baul-c {
+}
 .sempt-baulc-contacto {
   display: flex;
   align-items: center;
@@ -758,7 +871,7 @@
   transition-delay: .5s;
 }
 .sempt-br-pj > div> a {
-  font-family: 'Poppins';
+  font-family: poppins;
   font-weight: 600;
   font-style: italic;
   color: #fafafa;
@@ -826,7 +939,7 @@
   flex-direction: row-reverse;
 }
 .sempt-mdbs-nm {
-  font-family: 'Poppins';
+  font-family: poppins;
   font-weight: 500;
   font-size: .85rem;
   color: var(--accent);
@@ -883,7 +996,7 @@
 }
 .sempt-trama > b {
   display: block;
-  font-family: 'Poppins';
+  font-family: poppins;
   font-weight: 600;
   font-style: italic;
   font-size: .9rem;
@@ -942,7 +1055,8 @@
   line-height: 100%;
   text-shadow: var(--txsh);
 }
-
+.sempt-tbrol-t > i {
+}
 .sempt-tbrol-t > i {
   display: flex;
   align-items: center;
@@ -959,7 +1073,7 @@
   color: var(--accent);
 }
 .sempt-tbrol-t > b {
-  font-family: 'Poppins';
+  font-family: poppins;
   line-height: 100%;
   font-weight: 600;
   font-style: italic;
@@ -1028,6 +1142,8 @@
   position: relative;
   z-index: 1;
 }
+.sempt-txadm-tx > strong {
+}
 .sempt-txadm-tx > i {
   position: absolute;
   bottom: 0;
@@ -1038,7 +1154,7 @@
   z-index: -1;
 }
 .sempt-txadm-tx > div {
-  font-family: 'Poppins';
+  font-family: poppins;
   font-size: 1rem;
   text-shadow: var(--txsh);
   padding-bottom: 10px;
@@ -1353,7 +1469,8 @@
   flex-wrap: wrap;
   gap: 5px;
 }
-
+.sempt-medalla-modulo {
+}
 .sempt-medalla-modulo .smp-medallas.sinbr .sempt-md-sd {
   width: calc(calc(100% - 20px) / 5);
   box-sizing: border-box;
